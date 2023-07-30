@@ -1,0 +1,1 @@
+$(document).ready((function(){$("#user_category").click((function(){$("#quick_links").html("<option>Loading...</option>");var n=document.getElementById("user_category").value;$.get(baseURL+"fastlink/"+n,{},(function(n,e){$("#quick_links").html(n)}))})),$("#quick_links").change((function(){var n=document.getElementById("quick_links").value;window.open(n,"_blank")}))}));
